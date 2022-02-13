@@ -1,0 +1,63 @@
+.game {
+    height: 100%;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.rows {
+    align-self: center;
+    flex-grow: 1;
+}
+
+.words {
+    margin: 75px 50px;
+    flex-grow: 1;
+    overflow-y: scroll;
+    outline: dotted #312a2c 5px;
+    border-radius: 15px;
+    background-color: #615358;
+}
+
+
+.words::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+}
+.words::-webkit-scrollbar-track {
+    background: #312a2c;
+}
+.words::-webkit-scrollbar-thumb {
+    background: #3aa394;
+    border-radius: 5px;
+}
+
+.words p {
+    font-family: "PT Mono";
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.words p:first-of-type {
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 20px 0;
+    background-color: #615358;
+}
+
+.words p:nth-of-type(2) {
+    margin-top: 0;
+}
+
+.game img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 30px;
+}

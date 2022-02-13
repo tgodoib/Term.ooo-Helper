@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap');
+
+.square {
+    display: inline-block;
+    width: 75px;
+    aspect-ratio: 1;
+    padding: 0;
+    border-radius: 10px;
+    margin: 10px 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row .square p {
+    margin: 0;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    line-height: 75px;
+    font-family: 'Mitr', sans-serif;
+    font-size: 45px;
+    color: #fafaff;
+    cursor: pointer;
+    user-select: none;
+}

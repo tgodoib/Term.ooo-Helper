@@ -1,0 +1,12 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+
+  background-color: #6e5c62;
+}
+
+div:focus-visible {
+  outline: none;
+}
