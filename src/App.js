@@ -1,10 +1,16 @@
 import Game from "./Game";
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
+import Instructions from "./Instructions"
 
 function App() {
 
+    const [gameRef, setGameRef] = useState();
+
     return (
-        <Game />
+        <>
+            <Instructions gameRef={gameRef}/>
+            <Game setGameRef={setGameRef}/>
+        </>
     );
 }
 

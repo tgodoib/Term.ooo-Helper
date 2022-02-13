@@ -4,7 +4,7 @@ import wordList from './word_list.json';
 import Words from "./Words";
 import "./style/Game.css"
 
-function Game() {
+function Game({setGameRef}) {
     let [cellIndex, setCellIndex] = useState(0);
     let [rowIndex, setRowIndex] = useState(0);
 
@@ -44,6 +44,7 @@ function Game() {
     const containerRef = useRef(null);
 
     useEffect(() => {
+        setGameRef(containerRef);
         containerRef.current.focus();
     });
 
