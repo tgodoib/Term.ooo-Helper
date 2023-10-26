@@ -1,11 +1,11 @@
-FROM node:lts-slim
+FROM oven/bun:slim
 
 WORKDIR /app
 
 COPY . .
 
-RUN npm install
+RUN bun install
 
 EXPOSE 3001
 
-ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["bun", "start"]
